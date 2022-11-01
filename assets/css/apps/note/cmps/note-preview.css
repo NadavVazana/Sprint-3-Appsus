@@ -1,0 +1,132 @@
+.note-preview{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: montserrat-regular;
+    min-height: 250px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 13px;
+    break-inside: avoid;
+    position: relative;
+    padding: 30px 0;
+    transition: all 0.3s;
+
+}
+
+.note-preview:hover{
+    box-shadow: 2px 2px 7px 0px #0000004d;
+    transition: all 0.3s;
+}
+
+
+
+i{
+    color: rgb(20, 18, 18);
+    transition: all 0.3s;
+}
+
+i:hover{
+    color:cadetblue;
+    transition: all 0.3s;
+}
+
+.pinned{
+    color: rgb(210, 109, 109);
+}
+.note-icons{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    font-size: 1.1rem;
+    gap: 10px;
+    display: none;
+}
+
+.note-preview:hover .note-icons{
+    display: flex;
+}
+
+.edit-input{
+    position: absolute;
+    bottom: 12px;
+}
+
+ul{
+    width: 100%;
+    margin-inline-end: 10px;
+    list-style: circle;
+    margin-inline-end: 49px;
+    word-break: break-all;
+    
+}
+
+.note-color{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 1.5rem;
+    
+}
+
+.complete{
+    text-decoration: line-through;
+}
+.done{
+    font-size: 1.6rem;
+    margin-inline-end: 20px;
+    color: black;
+}
+.done:hover{
+    color: rgb(174, 36, 36);
+}
+
+.todo{
+    user-select: none;
+    justify-content: space-between;
+    padding: 5px 5px;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+    /* margin-inline-end: 25px; */
+    margin: auto;
+        
+}
+
+.todo:hover{
+    background-color: rgba(250, 235, 215, 0.168);
+    transition: 0.3s;
+}
+
+.note-preview iframe{
+    width: 90%;
+    
+}
+
+.text-note{
+    width: 80%;
+    word-wrap: break-word;
+    
+}
+
+.note-preview img{
+
+    margin-top: 20px;
+    max-height: 300px;
+    max-width:95%;
+    object-fit: contain;
+    border-radius: 20px;
+
+}
+
+
+
+@media (min-width: 560px){
+    .note-preview{
+        width: 220px;
+    }
+}

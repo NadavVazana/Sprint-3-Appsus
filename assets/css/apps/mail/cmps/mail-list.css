@@ -1,0 +1,23 @@
+.email-list {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 60px);
+    overflow-x: scroll;
+    /* border-right: .5px rgb(231, 223, 223) solid; */
+}
+
+.email-list > :nth-child(1){
+    border-top: .5px rgb(231, 223, 223) solid;
+}
+
+.email-count {
+    text-align: end;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+@media (min-width: 750px) {
+    .email-list {
+        width: calc(100vw - 220px);
+    }
+}

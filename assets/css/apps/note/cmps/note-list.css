@@ -1,0 +1,8 @@
+.note-list{
+    columns: 250px 10;
+   
+    column-gap: 20px;
+    flex-grow: 6;
+    margin: 0 35px;
+    
+}

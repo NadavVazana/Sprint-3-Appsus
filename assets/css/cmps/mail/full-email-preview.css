@@ -1,0 +1,35 @@
+.full-email-preview {
+    display: flex;
+     flex-direction: column; 
+     padding: 2em; 
+     border-bottom: 1px solid #1d1d1d26;
+}
+
+.email-header {
+    display: flex; 
+   justify-content: space-between;
+}
+
+.actions-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #1d1d1d26;
+}
+
+.full-email-preview > .body {
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.fa-solid {
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    .full-email-preview > .body {
+        /* text-overflow: clip; */
+        /* overflow: hidden; */
+        /* background-color: rgb(230, 126, 0); */
+    }
+}

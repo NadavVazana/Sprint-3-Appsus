@@ -1,0 +1,54 @@
+.add-book {
+    position: relative;
+    left: 15%;
+
+    padding: 40px;
+}
+
+.serch-res-container >* {
+    padding: 20px;
+}
+
+.serch-res-container >* button{
+    border: none;
+    margin-inline-start: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(196, 192, 192);
+}
+
+.serch-res-container >* button:hover{
+    background-color: brown;
+}
+
+.user-msg {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 5px solid #7bf1a8;
+    border-radius: 10px;
+    padding: 0.5em 1.5em;
+}
+
+.user-msg span:first-child {
+    color: #7bf1a8;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.user-msg a {
+    font-size: 1em;
+}
+
+.user-msg button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid #7bf1a8;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #7bf1a8;
+    cursor: pointer;
+}

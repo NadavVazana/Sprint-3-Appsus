@@ -1,0 +1,97 @@
+.search-bar {
+    display: flex;
+    border-bottom: 1px solid #1d1d1d34;
+    width: 100%;
+    align-self: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: column;
+}
+
+
+.search-input {
+    position: relative;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.search-input input {
+    width: 100%;
+    margin: 0;
+    border-radius: 6px;
+    border: none;
+    background-color: #f1f3f4;
+    padding: 1em;
+    padding-left:2.5em;
+    
+}
+
+.search-input select {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-left: 1px solid #1d1d1d34;
+    text-align: center;
+    background-color: #f1f3f4;
+    width: 20%;
+}
+
+.search-input input:focus, select:focus {
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.search-input input:focus + select{
+    background-color: #fff;
+}
+
+input:focus {
+    background-color: #fff;
+}
+
+.search-input button {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    background: none;
+    margin-left: 4px;
+}
+
+.progress-container {
+    margin-right: 5px;
+}
+
+.progression {
+    background-color: #c71610;
+    height: 10px;
+}
+
+@media (min-width:630px){
+    .search-bar{
+        flex-direction: unset;
+        align-items: center;
+    }
+
+    .search-input {
+        position: relative;
+        width: 50%;
+    }
+
+    .search-input input{
+        padding-left: 2.5em;
+    }
+
+    .progress-container {
+        margin-left: auto;
+        margin-right: 30px;
+        font-size: 0.875rem;
+    }
+}
+
+

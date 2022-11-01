@@ -1,0 +1,10 @@
+
+
+.pinned-notes{
+    columns: 250px 10;
+    column-gap: 20px;
+    margin: 0 35px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding: 20px;
+}

@@ -1,0 +1,26 @@
+.book-filter {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 20px;
+ 
+}
+
+.form-control {
+    display: flex;
+    align-items: center;
+}
+
+.form-control > *{
+    margin-inline-end: 10px;
+}
+
+@media (min-width:530px){
+    .book-filter{
+        flex-direction: unset;
+        gap: 0;
+    }
+}

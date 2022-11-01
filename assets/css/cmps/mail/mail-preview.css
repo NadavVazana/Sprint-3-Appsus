@@ -1,0 +1,158 @@
+.mail-preview {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #1d1d1d1a;
+    cursor: pointer;
+    min-height: 35px;
+    font-size: 0.9rem;
+    padding: 3px 0;
+}
+
+.text-container {
+    display: flex;
+}
+
+.text-container > *{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.mail-preview.read {
+    background-color: #f2f6fc;
+}
+
+.mail-preview.read .from {
+    font-weight: 400;
+}
+
+.mail-preview.read .subject {
+    font-weight: 400;
+}
+
+.buttons-date .buttons {
+    display: none;
+}
+
+.mail-preview:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px;
+}
+
+.mail-preview:hover .buttons {
+    display: inline-block;
+}
+
+.mail-preview:hover .date {
+    display: none;
+    white-space: nowrap;
+}
+ 
+.preview-mid-section {
+    display: flex;
+}
+
+.text-container .subject {
+    margin-inline-end: 1em;
+    font-weight: bold;
+    flex-shrink: 1;
+}
+
+.text-container .body {
+    color: #a3a1a1;
+    flex-shrink: 2;
+}
+
+
+.preview-mid-section {
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+.text-container {
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+}
+
+
+.from {
+    margin-right: 20px;
+    font-weight: bold;
+    min-width: 10%;
+}
+
+.buttons-date {
+    display: flex;
+    justify-content: end;
+    min-width: fit-content;
+    font-size: 1em;
+    margin-inline-start: auto;
+    /* min-width: 10%; */
+}
+
+.buttons > *, .date, .fa-star {
+    padding: 0.5em;
+    transition: 0.1s;
+}
+
+.buttons > *:hover, .fa-star:hover {
+    border-radius: 50%;
+}
+
+.fa-star {
+    color: #1d1d1d26;
+    padding: 12px;
+}
+
+.fa-star.starred {
+    color: gold;
+}
+@media (min-width:540px){
+    .buttons > *:hover, .fa-star:hover{
+        background-color: #1d1d1d26;
+
+    }
+}
+@media (max-width: 750px) {
+
+    .text-container {
+        flex-direction: column;
+    }
+
+    .preview-mid-section {
+        flex-direction: column;
+    }
+
+    .buttons-date {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-width: fit-content;
+    }
+
+    .buttons-date .buttons {
+        display: inline-block;
+    }
+  
+    .title {
+        display: flex;
+        flex-direction: column;
+        margin-block-end: 0.2em;
+    }
+
+    .from {
+        margin-bottom: 5px;
+    }
+
+    .buttons {
+        display: inline;
+    }
+
+    .mail-preview:hover .date {
+        display: inline-block;
+        white-space: nowrap;
+    }
+}

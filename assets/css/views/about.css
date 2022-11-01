@@ -1,0 +1,76 @@
+.about{
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-title{
+    font-size: 5rem;
+    margin: 100px 0;
+    user-select: none;
+}
+.boris > img{
+    width: 100px;
+    height: 100px;
+}
+
+.boris{
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.boris a img{
+    width: 70px;
+    height: 70px;
+}
+
+.nadav img{
+    width: 100px;
+    height: 100px;
+}
+
+.nadav a img{
+    width: 70px;
+    height: 70px;
+}
+
+.nadav{
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.crew{
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 0 10px;
+}
+
+.boris>a{
+    width: 100px;
+}
+.boris > h1{
+    color: brown;
+
+
+}
+
+.nadav > h1{
+    color: brown;
+}
+
+.boris>h2{
+    font-size: .8rem;
+}
+
+.nadav >h2{
+    font-size: 1rem;
+}

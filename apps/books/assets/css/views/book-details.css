@@ -1,0 +1,139 @@
+.book-details-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.product-info {
+    display: flex;
+    padding: 1rem;
+    width: 70%;
+}
+
+.img-container {
+    position: relative;
+    margin-right: 20px;
+}
+
+.sale {
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f07167;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    z-index: 20;
+}
+
+.product-info .info {
+    width: 70%;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+h2 + p {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.author {
+    margin-bottom: 1rem;
+    font-family: montserrat-bold;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-left: 1px solid rgba(0, 0, 0, 0.17);
+}
+
+.product-pricing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-back {
+    text-transform: capitalize;
+    align-self: flex-end;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid #1d1d1d;
+    padding: 0;
+    margin-top: 100px;
+    font-size: 1.2rem;
+}
+
+.btn-back::before {
+    content: '\2190';
+    font-size: 0;
+    margin-right: 0;
+    transition: 0.5s;
+}
+
+.btn-back:hover:before {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.btn-txt {
+    padding: 0;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid #1d1d1d;
+    margin-top: 20px;
+}
+
+.category {
+    padding: 2px 4px;
+    background-color:#00b4d8;
+    margin-inline-end: 2px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.price-red {
+    color: red;
+}
+
+.price-green {
+    color: green;
+}
+
+.long-reading {
+    background-color: #f07167;
+}
+
+.decent-reading {
+    background-color: #3a86ff;
+}
+
+.light-reading {
+    background-color: #06d6a0;
+}
+
+.sale-sm {
+    background-color: #f07167;
+    color: #fff;
+    border-radius: 4px;   
+    padding: 3px 6px;
+    margin-inline-start: 10px;
+}
+
+.info {
+    font-weight: bold;
+}

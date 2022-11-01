@@ -1,0 +1,33 @@
+.book-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.book-preview h3 {
+    text-transform: capitalize;
+    font-size: 1em;
+    margin-bottom: auto;
+}
+
+.book-preview img {
+    margin-bottom: auto;
+}
+
+.btn-details {
+    background-color: #8ecae6;
+    transition: 0.3s;
+}
+
+.btn-details:hover {
+    background-color: #219ebc;
+    color: #fff;
+}
+
+.btn-details:hover .book-preview {
+    background-color: aqua;
+}
+
+

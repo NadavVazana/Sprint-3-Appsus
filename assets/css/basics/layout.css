@@ -1,0 +1,25 @@
+.main-layout>:not(.full) {
+    max-width: 100%;
+}
+
+
+@media (min-width: 540px) {
+    .main-layout>:not(.full) {
+        max-width: 500px;
+        margin-inline-end: auto;
+        margin-inline-start: auto;
+    }
+}
+
+@media (min-width: 1040px) {
+    .main-layout>:not(.full) {
+        max-width: 1000px;
+    }
+
+}
+
+@media (min-width: 1340px) {
+    .main-layout>:not(.full) {
+        max-width: 1300px;
+    }
+}

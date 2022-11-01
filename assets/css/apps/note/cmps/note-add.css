@@ -1,0 +1,71 @@
+.note-add {
+    background-color: white;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 80%;
+    margin: auto;
+    padding: 12px;
+    box-shadow: 2px 2px 7px 0px #0000004d
+}
+
+.input-icons>* {
+    padding: 5px;
+    color: grey;
+}
+
+.input-icons:active{
+    color: rgb(165, 29, 29);
+}
+
+.input-icons>*:hover {
+    color: unset;
+    cursor: pointer;
+
+}
+
+.input-icons {
+    width: 100px;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+
+.input-txt {
+    flex-grow: 1;
+
+}
+
+.input-txt input {
+    border: none;
+    width: 90%;
+    font-family: montserrat-regular;
+    font-size: 1rem;
+
+
+
+}
+
+.input-txt input:focus {
+    outline: none;
+}
+
+@media (min-width: 540px) {
+    .input-icons {
+        width: 180px;
+    }
+
+    .input-txt input {
+        font-size: 1.2rem;
+    }
+
+    .note-add {
+        width: 80%;
+    }
+
+}
+
+@media (min-width:840px) {
+    .note-add {
+        width: 40%;
+    }
+}

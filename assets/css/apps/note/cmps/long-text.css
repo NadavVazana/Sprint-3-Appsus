@@ -1,0 +1,14 @@
+.long-text{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.long-text p{
+    max-width: 100%;
+}
+
+.long-text button{
+    border-radius: 20px;
+    border: none;
+    font-family: montserrat-regular;
+}

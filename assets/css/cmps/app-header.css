@@ -1,0 +1,143 @@
+header {
+    background: rgb(222, 209, 193);
+    border-bottom: 2px solid rgb(205, 195, 195);
+    justify-content: center;
+    align-items: center;
+    max-height: 97px;
+    
+
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.logo{
+    font-family:montserrat-regular;
+    margin-inline-start: 35px;
+    margin-bottom: 15px;
+    user-select: none;
+   
+}
+.logo-icon{
+    width: 35px;
+    position: relative;
+    top: 12px;
+
+}
+.header-mail-count{
+    border-radius: 30px;
+    background-color: rgb(233, 80, 80);
+    padding: 2px;
+    color: rgb(230, 211, 211);
+    font-size: .7rem;
+    text-align: center;
+
+    top: 4%;
+    height: 1.7%;
+    width: .7%;
+}
+
+nav{
+    display: none;
+    
+}
+
+nav a {
+
+    padding: 40px;
+    user-select: none;
+    font-size: .64rem;
+    margin-inline-end: 20px;
+    margin-inline-start: 20px;
+    font-weight: bold;
+    font-family:montserrat-regular ;
+}
+
+nav a:active {
+    color: purple;
+}
+
+.menu-open  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    right: 0;
+    top: 13.5%;
+    box-shadow: -1px 4px 20px 0px #615a5a2b;
+    background-color: rgba(255, 255, 255, 0.712);
+    z-index: 3000;
+    
+
+}
+
+
+.mail-icon{
+    width: 40px;
+    height: 40px;
+}
+.home-icon{
+    width: 40px;
+    height: 40px;
+}
+.about-icon{
+    width: 40px;
+    height: 40px;
+}
+.book-icon{
+    width: 40px;
+    height: 40px;
+}
+.note-icon{
+    width: 40px;
+    height: 40px;
+}
+
+
+.square-menu{
+    width: 30px;
+    margin-left: auto;
+    margin-inline-end: 30px;
+    cursor: pointer;
+    
+}
+nav a.active {
+    color: darkblue;
+    font-weight: bold;
+    /* text-decoration: overline; */
+}
+
+
+@media (min-width:700px){
+    nav > a{
+        margin-inline-start: 0;
+        margin-inline-end:50px;
+        font-size: 1rem;
+
+    }
+    .header-mail-count{
+        position: absolute;
+      
+    }
+
+    
+
+    .square-menu{
+        display: none;
+    }
+
+    nav{
+        display: inline;
+        height: 25px;
+    }
+    .menu-close{
+        display: inline;
+        
+    }
+    .menu-close a{
+        padding: 0;
+    }
+}
+
+

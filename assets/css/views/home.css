@@ -1,0 +1,24 @@
+.home-title{
+    font-family: montserrat-regular;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    user-select: none;
+    min-width: 100%;
+    text-align: center;
+}
+
+.home{
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img{
+   width:80px;
+   height: 80px;
+}
+

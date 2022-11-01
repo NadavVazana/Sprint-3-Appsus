@@ -1,0 +1,71 @@
+.color-picker >* {
+    width: 14px;
+    height: 15px;
+    margin-inline-end: 3px;
+    border-radius: 20px;
+    position: relative;
+    top: 5px;
+    left: 0px;
+    margin-inline-end: 5px;
+    cursor: pointer;
+
+
+}
+
+
+
+.yellow{
+    background-color: #d7d72e;
+}
+
+.blue{
+    background-color: #2323c9;
+}
+
+.red{
+    background-color: #c81c1c;
+}
+
+.gold{
+    background-color: #ffd700;
+}
+
+.silver{
+    background-color: #c0c0c0;
+}
+
+.grey{
+    background-color: #808080;
+}
+.purple{
+    background-color: #800080;
+}
+
+.green{
+    background-color: #008000;
+}
+
+.brown{
+    background-color: #a52a2a;
+}
+
+.orange{
+    background-color: #ffa500;
+}
+
+.pink{
+    background-color: #ffc0cb;
+}
+
+@media (min-width:430px){
+    .color-picker >* {
+        left: 150px;
+        top: 30px;
+        margin-inline-end: 2px;
+}}
+@media (min-width:1250px){
+    .color-picker >* {
+        left: 200px;
+        margin-inline-end: 9px;
+    }
+}
